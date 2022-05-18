@@ -6,20 +6,18 @@
     <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
 </head>
 <body>
-<ul>
     <!-- Iterate over object_list -->
     {% for object in object_list %}
     <!-- Display Objects -->
-    <li>{{ object.topic }}</li>
+    <h3>Topic: {{ object.topic }}</h3>
 
-    <p>{{ object.question }}</p>
-    <p>{{ object.answer }}</p>
+    <p>Q: {{ object.question }}</p>
+    <p>A: {{ object.answer }}</p>
 
     <hr/>
     <!-- If objet_list is empty  -->
     {% empty %}
-    <li>No objects yet.</li>
+    <p>No objects yet.</p>
     {% endfor %}
-</ul>
 </body>
 </html>
