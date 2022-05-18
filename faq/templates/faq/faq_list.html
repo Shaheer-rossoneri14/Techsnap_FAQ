@@ -11,10 +11,10 @@
     {% for object in object_list %}
     <!-- Display Objects -->
     <li>{{ object.topic }}</li>
-    <ol>
-    <li>{{ object.question }}</li>
-    <li>{{ object.answer }}</li>
-    </ol>
+
+    <p>{{ object.question }}</p>
+    <p>{{ object.answer }}</p>
+
     <hr/>
     <!-- If objet_list is empty  -->
     {% empty %}
