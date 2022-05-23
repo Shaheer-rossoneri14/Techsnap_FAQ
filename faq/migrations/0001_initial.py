@@ -14,7 +14,7 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='FAQ',
             fields=[
-                ('id', models.BigIntegerField(primary_key=True, serialize=False)),
+                ('id', models.BigIntegerField(primary_key=True, serialize=True, null=False)),
                 ('topic', models.CharField(choices=[('Account', 'Account'), ('Enrollment', 'Enrollment'), ('Communication', 'Communication'), ('Certification', 'Certification'), ('Others', 'Others')], default='Others', max_length=100)),
                 ('question', models.TextField()),
                 ('answer', models.TextField()),
