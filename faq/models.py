@@ -13,3 +13,5 @@ class FAQ(models.Model):
     topic = models.CharField(max_length = 100, choices = topic_choices, default="Others")
     question = models.TextField()
     answer = models.TextField()
+
+
