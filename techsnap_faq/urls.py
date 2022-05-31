@@ -19,5 +19,5 @@ from faq.views import FaqList
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('list/', FaqList.as_view()),
+    path('faq/', FaqList.as_view()),
 ]
